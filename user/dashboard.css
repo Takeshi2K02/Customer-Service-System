@@ -1,0 +1,125 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Navigation lists */
+.nav-left, .nav-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation list items */
+.nav-left li, .nav-right li {
+    margin: 0 10px;
+}
+
+/* Navigation links */
+.nav-left li a, .nav-right li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.nav-left li a:hover, .nav-right li a:hover {
+    background-color: #575757;
+}
+
+/* Username display */
+.nav-right li {
+    color: white;
+    padding: 8px 16px;
+}
+
+/* Profile picture styles */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* Dropdown styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    padding: 8px;
+    color: white;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #ddd;
+}
+
+/* Show dropdown menu on hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Page content */
+.content {
+    padding: 20px;
+}
+
+/* Home page specific styles */
+.content.home {
+    background-color: #f9f9f9;
+}
+
+/* FAQ page specific styles */
+.content.faq {
+    background-color: #e9f7ff;
+}
+
+/* Contact Us page specific styles */
+.content.contact_us {
+    background-color: #fff3e0;
+}
+
+/* About Us page specific styles */
+.content.about_us {
+    background-color: #e0ffe3;
+}
+
+/* Profile page specific styles */
+.content.profile {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Error message */
+.error {
+    color: red;
+}

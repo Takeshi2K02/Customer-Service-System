@@ -1,0 +1,75 @@
+/* General body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation bar styles */
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Navigation lists */
+.nav-left, .nav-right {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation list items */
+.nav-left li, .nav-right li {
+    margin: 0 10px;
+}
+
+/* Navigation links */
+.nav-left li a, .nav-right li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    display: block;
+}
+
+.nav-left li a:hover, .nav-right li a:hover {
+    background-color: #575757;
+}
+
+/* Username display */
+.nav-right li {
+    color: white;
+    padding: 8px 16px;
+}
+
+/* Page content */
+.content {
+    padding: 20px;
+}
+
+/* Home page specific styles */
+.content.home {
+    background-color: #f9f9f9;
+}
+
+/* FAQ page specific styles */
+.content.faq {
+    background-color: #e9f7ff;
+}
+
+/* Contact Us page specific styles */
+.content.contact_us {
+    background-color: #fff3e0;
+}
+
+/* About Us page specific styles */
+.content.about_us {
+    background-color: #e0ffe3;
+}
+
+/* Error message */
+.error {
+    color: red;
+}

@@ -44,6 +44,49 @@ nav {
     padding: 8px 16px;
 }
 
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.dropdown-toggle {
+    cursor: pointer;
+    color: white;
+    padding: 8px 16px;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: #333; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-menu a {
+    color: white; /* Text color for dropdown items */
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #575757; /* Hover background color for dropdown items */
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
 /* Page content */
 .content {
     padding: 20px;
@@ -72,4 +115,154 @@ nav {
 /* Error message */
 .error {
     color: red;
+}
+
+/* Crop Profile Image */
+.crop-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%; /* Adjust as necessary */
+    max-width: 600px; /* Limit maximum width for responsive design */
+    height: auto; /* Allows the height to adjust proportionally */
+    overflow: hidden; /* Ensure cropped area stays within bounds */
+}
+
+.crop-wrapper img {
+    display: block;
+    max-width: 100%; /* Ensure the image fits within the container */
+    height: auto; /* Allows the image to scale proportionally */
+}
+
+.crop-container {
+    text-align: center; /* Center align the crop container */
+    margin-top: 20px; /* Optional: Adjust the margin as needed */
+}
+
+.crop-container button {
+    margin-top: 10px; /* Optional: Adjust the margin as needed */
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Profile container styles */
+.profile-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.profile-container h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center align vertically */
+    flex-direction: column; /* Stack elements vertically */
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    flex: 2;
+    margin-right: 20px;
+    text-align: right;
+    font-weight: bold;
+}
+
+.form-group input {
+    flex: 3;
+    padding: 10px; /* Adjust the padding as needed */
+    font-size: 16px; /* Adjust the font size as needed */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 100%; /* Ensure all inputs have the same width */
+}
+
+.profile-form input {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#editButton {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 4px;
+    width: 80px;
+}
+
+#saveButton {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    border-style: none;
+    border-radius: 4px;
+    width: 200px;
+}
+
+.file-label {
+    display: block;
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    width: 200px;
+}
+
+#profile_picture {
+    display: none; /* Hide the file input */
+}
+
+/* Show upload button after selecting a file */
+#uploadButton {
+    width: 200px;
+    font-size: 20px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: none; /* Hide initially */
+    border-radius: 5px;
 }
